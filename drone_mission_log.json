@@ -1,0 +1,48 @@
+{
+    "mission_id": "unique_id",
+    "timestamp": "ISO_8601_format",
+    "location": {
+        "latitude": "decimal_degrees",
+        "longitude": "decimal_degrees",
+        "altitude": "meters"
+    },
+    "drone_details": {
+        "model": "drone_model",
+        "serial_number": "serial_number"
+    },
+    "sensor_data": {
+    "LiDAR": {
+        "resolution": "number_of_points_per_square_meter",
+        "point_cloud": [
+        {
+            "x": "meters",
+            "y": "meters",
+            "z": "meters",
+            "intensity": "value"
+        }
+        ]
+    },
+    "imagery": {
+        "resolution": "pixels_per_meter",
+        "images": [
+        {
+            "image_id": "unique_image_id",
+            "url": "storage_url",
+            "metadata": {
+            "capture_time": "ISO_8601_format",
+            "camera_settings": {
+                "focal_length": "mm",
+                "aperture": "f-stop",
+                "iso": "iso_value"
+            }
+            }
+        }
+        ]
+    }
+    },
+    "environmental_conditions": {
+            "weather": "description",
+            "temperature": "celsius",
+            "wind_speed": "meters_per_second"
+    }
+}
